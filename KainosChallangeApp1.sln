@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2018
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KainosApp1", "KainosApp1\KainosApp1.csproj", "{821F58EA-4395-41D6-8814-904EECBF5E4F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{821F58EA-4395-41D6-8814-904EECBF5E4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{821F58EA-4395-41D6-8814-904EECBF5E4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{821F58EA-4395-41D6-8814-904EECBF5E4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{821F58EA-4395-41D6-8814-904EECBF5E4F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EAD44DFB-585B-4061-8C16-E8E4E7410BCD}
+	EndGlobalSection
+EndGlobal
