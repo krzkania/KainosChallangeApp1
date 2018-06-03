@@ -1,0 +1,12 @@
+﻿@model List<KainosApp1.Models.CoinsBTC_allTime>
+@{
+    var myChart = new Chart(width: 1200, height: 800)
+        .AddTitle("ALL TIME BTC")
+
+        .AddSeries(
+            name: "BITCOIN",
+            chartType: "line",
+            xValue: Model, xField: "time",
+            yValues: Model, yFields: "average")
+        .Write();
+}

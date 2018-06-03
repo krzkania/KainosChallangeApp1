@@ -1,0 +1,12 @@
+﻿@model List<KainosApp1.Models.CoinsBTC_daily>
+@{
+    var myChart = new Chart(width: 1200, height: 800)
+        .AddTitle("Daily BTC")
+
+        .AddSeries(
+            name: "BITCOIN",
+            chartType: "line",
+            xValue: Model, xField: "time",
+            yValues: Model, yFields: "average")
+        .Write();
+}

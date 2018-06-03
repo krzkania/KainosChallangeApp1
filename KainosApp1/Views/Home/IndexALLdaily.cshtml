@@ -1,0 +1,22 @@
+﻿@model KainosApp1.Models.CoinsALLdaily
+@{
+    var myChart = new Chart(width: 1200, height: 800)
+        .AddTitle("Daily ALL COINS")
+
+        .AddSeries(
+            name: "BTC",
+            chartType: "line",
+            xValue: Model.btcDailyAll, xField: "time",
+            yValues: Model.btcDailyAll, yFields: "average")
+        .AddSeries(
+            name: "ETH",
+            chartType: "line",
+            xValue: Model.ethDailyAll, xField: "time",
+            yValues: Model.ethDailyAll, yFields: "average")
+        .AddSeries(
+            name: "LTC",
+            chartType: "line",
+            xValue: Model.ltcDailyAll, xField: "time",
+            yValues: Model.ltcDailyAll, yFields: "average")
+        .Write();
+}

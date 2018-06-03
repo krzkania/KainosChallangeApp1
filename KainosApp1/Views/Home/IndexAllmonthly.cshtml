@@ -1,0 +1,22 @@
+﻿@model KainosApp1.Models.CoinsALLmonthly
+@{
+    var myChart = new Chart(width: 1200, height: 800)
+        .AddTitle("Monthly ALL COINS")
+
+        .AddSeries(
+            name: "BTC",
+            chartType: "line",
+            xValue: Model.btcMonthlyAll, xField: "time",
+            yValues: Model.btcMonthlyAll, yFields: "average")
+        .AddSeries(
+            name: "ETH",
+            chartType: "line",
+            xValue: Model.ethMonthlyAll, xField: "time",
+            yValues: Model.ethMonthlyAll, yFields: "average")
+        .AddSeries(
+            name: "LTC",
+            chartType: "line",
+            xValue: Model.ltcMonthlyAll, xField: "time",
+            yValues: Model.ltcMonthlyAll, yFields: "average")
+        .Write();
+}

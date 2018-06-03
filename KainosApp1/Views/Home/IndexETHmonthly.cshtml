@@ -1,0 +1,12 @@
+﻿@model List<KainosApp1.Models.CoinsETH_monthly>
+@{
+    var myChart = new Chart(width: 1200, height: 800)
+        .AddTitle("Daily ETH")
+
+        .AddSeries(
+            name: "ETHERUM",
+            chartType: "line",
+            xValue: Model, xField: "time",
+            yValues: Model, yFields: "average")
+        .Write();
+}
